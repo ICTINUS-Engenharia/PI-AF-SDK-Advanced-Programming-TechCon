@@ -6,9 +6,9 @@ using OSIsoft.AF.Asset;
 using OSIsoft.AF.Data;
 using External;
 
-namespace Ex4_Asynchronous_Data_Access
+namespace Ex4_Asynchronous_Data_Access_Sln
 {
-    class Program
+    class Program4
     {
         static void Main(string[] args)
         {

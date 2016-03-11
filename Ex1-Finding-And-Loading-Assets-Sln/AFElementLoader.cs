@@ -33,7 +33,7 @@ namespace Ex1_Finding_And_Loading_Assets_Sln
 
                 IEnumerable<AFElement> elements = baseElements.OfType<AFElement>();
 
-                var elementGroupings = elements.GroupBy(elm => elm.Template);
+                IEnumerable<IGrouping<AFElementTemplate, AFElement>> elementGroupings = elements.GroupBy(elm => elm.Template);
                 foreach (var item in elementGroupings)
                 {
                     // The passed in attribute template name may belong to a base element template.

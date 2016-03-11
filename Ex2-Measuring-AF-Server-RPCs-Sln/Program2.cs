@@ -6,12 +6,12 @@ using External;
 
 namespace Ex2_Measuring_AF_Server_RPCs_Sln
 {
-    class Program
+    class Program2
     {
         static void Main(string[] args)
         {
             // This factory method is new in 2.8.
-            PISystem ps = PISystem.CreatePISystem("bshange6430s");
+            PISystem ps = PISystem.CreatePISystem("PISRV01");
 
             using (new AFProbe("PrintAttributeCounts", ps))
             {

@@ -45,7 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AFAsyncDataReader.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Program4.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

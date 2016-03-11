@@ -6,7 +6,7 @@ using External;
 
 namespace Ex2_Measuring_AF_Server_RPCs
 {
-    class Program
+    class Program2
     {
         static void Main(string[] args)
         {

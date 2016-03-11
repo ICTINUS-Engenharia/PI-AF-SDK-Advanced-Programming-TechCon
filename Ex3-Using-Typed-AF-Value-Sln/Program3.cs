@@ -6,7 +6,7 @@ using OSIsoft.AF.Time;
 
 namespace Ex3_Using_Typed_AF_Value_Sln
 {
-    class Program
+    class Program3
     {
         static void Main(string[] args)
         {

@@ -5,9 +5,9 @@ using OSIsoft.AF;
 using OSIsoft.AF.Asset;
 using External;
 
-namespace Ex1_Finding_And_Loading_Assets_Sln
+namespace Ex1_Finding_And_Loading_Assets
 {
-    class Program
+    class Program1
     {
         static void Main(string[] args)
         {
@@ -24,7 +24,7 @@ namespace Ex1_Finding_And_Loading_Assets_Sln
             var end = GC.GetTotalMemory(forceFullCollection: true);
 
             // Keep below 260 KB
-            Console.WriteLine("elementsLoaded Memory: {0:N0}", (end - begin));
+            Console.WriteLine("elementsLoaded Memory: {0:N0} KB", (end - begin));
 
             Console.WriteLine("Press any key to continue");
             Console.ReadKey();

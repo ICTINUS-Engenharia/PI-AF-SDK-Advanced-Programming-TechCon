@@ -8,7 +8,7 @@ using External;
 
 namespace Ex5_Real_Time_Analytics
 {
-    class Program
+    class Program5
     {
         static void Main(string[] args)
         {

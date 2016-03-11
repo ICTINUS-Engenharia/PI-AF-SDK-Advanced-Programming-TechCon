@@ -47,7 +47,7 @@
     <Compile Include="AFRankedValue.cs" />
     <Compile Include="AssetRankProvider.cs" />
     <Compile Include="IRankProvider.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Program5.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
