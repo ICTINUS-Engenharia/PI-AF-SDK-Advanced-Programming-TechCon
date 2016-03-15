@@ -13,7 +13,7 @@ namespace Ex4_Asynchronous_Data_Access_Sln
     {
         public static async Task<IList<IDictionary<AFSummaryTypes, AFValue>>> GetSummariesAsync(AFAttributeList attributeList)
         {
-            Console.WriteLine("Calling GetSummariesAsync");
+            Console.WriteLine("Calling GetSummariesAsync\n");
 
             Task<IDictionary<AFSummaryTypes, AFValue>>[] tasks = attributeList
                 // Do not make the call if async is not supported

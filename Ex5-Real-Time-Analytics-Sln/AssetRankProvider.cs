@@ -56,10 +56,16 @@ namespace Ex5_Real_Time_Analytics_Sln
             DataPipe.Subscribe(this);
 
             // Throw exception on errors
-            AFErrors<AFAttribute> errors = DataPipe.AddSignups(attrList);
-            if (errors != null)
+            AFListResults<AFAttribute, AFDataPipeEvent> initEvents = DataPipe.AddSignupsWithInitEvents(attrList);
+            if (initEvents.HasErrors)
             {
-                throw new Exception(errors.ToString(), new AggregateException(errors.Errors.Values));
+                throw new Exception("There was an error during signup.", new AggregateException(initEvents.Errors.Values));
+            }
+
+            // Initialize the dictionary cache
+            foreach (AFDataPipeEvent dpEvent in initEvents)
+            {
+                OnNext(dpEvent);
             }
 
             Console.WriteLine("{0} | Signed up for updates for {1} attributes\n", DateTime.Now, attrList.Count);
@@ -122,7 +128,7 @@ namespace Ex5_Real_Time_Analytics_Sln
             }
         }
 
-        public IList<AFRankedValue> GetTopNElements(int N)
+        public IList<AFRankedValue> GetTopNElements(int topN)
         {   
             // We will perform the sort on demand, operating under the assumption that requests for rankings
             // occur less frequently than the event arrival rate.
@@ -136,8 +142,7 @@ namespace Ex5_Real_Time_Analytics_Sln
                 return _afValueComparer(x.Value, y.Value)*-1; // -1 to sort descending
             });
 
-            int r = 1;
-            return tempList.Select(kvp => new AFRankedValue { Value = kvp.Value, Ranking = r++ }).Take(N).ToList();
+            return tempList.Take(topN).Select((kvp, idx) => new AFRankedValue { Value = kvp.Value, Ranking = idx }).ToList();
         }
 
         public void Dispose()

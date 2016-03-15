@@ -31,8 +31,10 @@ namespace Ex2_Measuring_AF_Server_RPCs_Sln
                 {
                     Console.WriteLine("Element: {0}, # Attributes: {1}", element.Name, element.Attributes.Count);
                 }
+                Console.WriteLine();
             }
 
+            Console.WriteLine();
             Console.WriteLine("Press any key to quit");
             Console.ReadKey();
         }
