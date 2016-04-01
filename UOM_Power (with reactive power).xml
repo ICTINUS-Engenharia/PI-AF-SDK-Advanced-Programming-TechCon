@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AF xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="OSIsoft.AF.xsd" SchemaVersion="2.0" SoftwareVersion="2.6.1.6238" ExportMode="NoUniqueID" PISystem="CSSSQLAF2" Created="2015-06-02T13:18:31.100238Z" id="b3ddad93-0b80-4b52-84a6-106354777b22" ParentKey="7b0faa35-160d-45ff-83a5-8eff4229515a" ExportedObject="Power" ExportedType="UOMClass" Identity="UOMClass" PIPersist="186 {9895150E-085D-4fcb-A16D-5EF5D2527196} 2\{b8ac1265-8ab5-42ec-9a30-2735eba9ffe5}\UOMDatabase\UOMClasses[{b3ddad93-0b80-4b52-84a6-106354777b22}]*CSSSQLAF2\UOMDatabase\UOMClasses[Power]">
+  <UOMClass>
+    <Name>Power</Name>
+    <CanonicalUOM>watt</CanonicalUOM>
+    <CanonicalAbbr>W</CanonicalAbbr>
+    <UOMBaseClass>
+      <Name>Length</Name>
+      <BasePower>2</BasePower>
+    </UOMBaseClass>
+    <UOMBaseClass>
+      <Name>Mass</Name>
+      <BasePower>1</BasePower>
+    </UOMBaseClass>
+    <UOMBaseClass>
+      <Name>Time</Name>
+      <BasePower>-3</BasePower>
+    </UOMBaseClass>
+  </UOMClass>
+  <UOM>
+    <Name>watt</Name>
+    <Abbreviation>W</Abbreviation>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>British thermal unit per hour</Name>
+    <Abbreviation>Btu/h</Abbreviation>
+    <RefFactor>0.29307107017222</RefFactor>
+    <RefUOM>watt</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>calorie per second</Name>
+    <Abbreviation>cal/s</Abbreviation>
+    <RefFactor>4.1868</RefFactor>
+    <RefUOM>watt</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>gigawatt</Name>
+    <Abbreviation>GW</Abbreviation>
+    <RefFactor>1000000000</RefFactor>
+    <RefUOM>watt</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>horsepower</Name>
+    <Abbreviation>hp</Abbreviation>
+    <RefFactor>745.699871582</RefFactor>
+    <RefUOM>watt</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>joule per second</Name>
+    <Abbreviation>J/s</Abbreviation>
+    <RefUOM>watt</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>kilovolt-ampere reactive</Name>
+    <Abbreviation>kVAR</Abbreviation>
+    <RefFactor>1000</RefFactor>
+    <RefUOM>watt</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>kilowatt</Name>
+    <Abbreviation>kW</Abbreviation>
+    <RefFactor>1000</RefFactor>
+    <RefUOM>watt</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>megajoule per hour</Name>
+    <Abbreviation>MJ/h</Abbreviation>
+    <RefFactor>277.777777777778</RefFactor>
+    <RefUOM>watt</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>megavolt-ampere reactive</Name>
+    <Abbreviation>MVAR</Abbreviation>
+    <RefFactor>1000000</RefFactor>
+    <RefUOM>watt</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>million British thermal unit per day</Name>
+    <Abbreviation>MM Btu/d</Abbreviation>
+    <RefFactor>41666.6666666667</RefFactor>
+    <RefUOM>British thermal unit per hour</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>million British thermal unit per hour</Name>
+    <Abbreviation>MM Btu/h</Abbreviation>
+    <RefFactor>1000000</RefFactor>
+    <RefUOM>British thermal unit per hour</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>volt-ampere reactive</Name>
+    <Abbreviation>VAR</Abbreviation>
+    <Description>Reactive Power</Description>
+    <RefUOM>watt</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+  <UOM>
+    <Name>megawatt</Name>
+    <Abbreviation>MW</Abbreviation>
+    <Description>Generated Power</Description>
+    <RefFactor>1000000</RefFactor>
+    <RefUOM>watt</RefUOM>
+    <Class>Power</Class>
+  </UOM>
+</AF>
