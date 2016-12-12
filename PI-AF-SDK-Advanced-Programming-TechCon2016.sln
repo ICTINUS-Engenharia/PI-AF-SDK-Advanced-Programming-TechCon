@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex5-Real-Time-Analytics-Sln", "Ex5-Real-Time-Analytics-Sln\Ex5-Real-Time-Analytics-Sln.csproj", "{1916F548-0AEE-4B9E-8634-7947070B2851}"
 EndProject
@@ -24,6 +24,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex4-Asynchronous-Data-Access-Sln", "Ex4-Asynchronous-Data-Access-Sln\Ex4-Asynchronous-Data-Access-Sln.csproj", "{A67E29D0-B02D-49EC-9105-4127FABDE38F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex4-Asynchronous-Data-Access", "Ex4-Asynchronous-Data-Access\Ex4-Asynchronous-Data-Access.csproj", "{D5289243-324D-4A3E-AC50-604097E695D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{69C3BCA6-6E39-4DEC-AAB6-D7D6A277E138}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
