@@ -5,7 +5,7 @@
 This repository contains the Visual Studio Exercises and Solutions from the **Advanced Programming with PI AF SDK lab** that was given during the Users Conference 2016 in San Francisco, more specifically during the TechCon 2016 session.
 
 For the Associated User Manual and the PowerPoint presentation, they are available on PI Square.
-[PI AF SDK for Begginers lab - User Manual and Presentation][1] 
+[PI AF SDK for Advanced programming lab - User Manual and Presentation][1] 
 
 ##Introduction
 This course will cover immediate and advanced usage of the PI AF SDK. A background in .NET application development and a familiarity with the PI System and PI AF SDK are assumed.
