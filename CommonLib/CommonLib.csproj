@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25D9579A-A4FF-4793-A5ED-A50814FB6A64}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonLib</RootNamespace>
+    <AssemblyName>CommonLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OSIsoft.AFSDK, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6238be57836698e6, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BenchmarkTimer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Exercises.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ex1_Search\Ex1_Search.csproj">
+      <Project>{8c32e50c-80fc-4f83-bfd5-9c8b5c8a26b1}</Project>
+      <Name>Ex1_Search</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ex2_ReadData\Ex2_ReadData.csproj">
+      <Project>{71cd3ce3-3338-48a2-bb68-c93b22290022}</Project>
+      <Name>Ex2_ReadData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ex3_SummaryData\Ex3_SummaryData.csproj">
+      <Project>{f6c0414b-c55c-4ec6-b926-d8471b6ec9ae}</Project>
+      <Name>Ex3_SummaryData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ex4_DataUpdates\Ex4_DataUpdates.csproj">
+      <Project>{ba08fded-86d7-44be-a2fd-9b32eef62135}</Project>
+      <Name>Ex4_DataUpdates</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ex5_WriteData\Ex5_WriteData.csproj">
+      <Project>{eca5e96d-cbe7-4022-9aee-6709e695b9b8}</Project>
+      <Name>Ex5_WriteData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ex6_AppImpersonation_Solution\Ex6_AppImpersonation_Solution.csproj">
+      <Project>{8282f0e9-e1f7-43df-ad84-2c064beda917}</Project>
+      <Name>Ex6_AppImpersonation_Solution</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ex7_AppCheckSecurity_Solution\Ex7_AppCheckSecurity_Solution.csproj">
+      <Project>{b8f71962-be29-4dc4-97a4-f5ed5852cd36}</Project>
+      <Name>Ex7_AppCheckSecurity_Solution</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Exercises.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

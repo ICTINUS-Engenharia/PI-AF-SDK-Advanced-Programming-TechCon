@@ -1,0 +1,52 @@
+﻿@model List<System.String>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>    
+    <meta name="viewport" content="width=device-width" />    
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <title>Results</title>
+</head>
+
+<body>
+    <div class="col-sm-8 col-sm-offset-2">
+        <h1>ASP.NET MVC with PI AF SDK</h1>
+        <br /><br />
+
+        <h4>Run Exercises.</h4>
+        <br /><br />
+        <div class="container">
+            <div class="row">
+                @using (Html.BeginForm("ResultExercise", "Home", FormMethod.Get, new { @class = "form-inline", role = "form" }))
+                {
+                    <button type="submit" class="btn btn-default">Run</button>
+                }
+            </div>
+        </div>
+
+                <table class="table">
+                    <tr>
+                        <th>Results:</th>
+                    </tr>
+                    @foreach (var result in Model)
+                    {
+                        <tr>
+                            <td>@result.ToString()</td>
+                        </tr>
+                    }
+                </table>
+                <br />
+
+    </div>
+</body>
+
+</html>
+
